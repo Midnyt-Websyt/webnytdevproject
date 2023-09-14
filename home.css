@@ -147,8 +147,8 @@ background-color: slateblue;
 
 @media (max-width: 800px) { 
  .home-page button a{
-   font-size: .7rem;
-   padding:.8rem 1rem;
+   font-size: .9rem;
+   padding: 1rem;
  }
   nav ul{
     gap: 2rem;
