@@ -1,0 +1,291 @@
+*{
+margin: 0;
+padding: 0;
+}
+nav{
+  position: fixed;
+  top: 0; right: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+background: black;
+  box-shadow: 0 .3rem 2rem rgba(0,0,0,2);
+  padding: .8rem 1.3rem;
+  z-index: 10;
+}
+#bars{
+  color: white;
+  display: none;
+}
+#close{
+  font-size: 1.1rem;
+   color: white;
+ background-color: green;
+  display: none;
+  padding: .2rem .4rem;
+  border-radius: 50%;
+}
+#close:hover{
+  font-size: 1.2rem;
+ color: green;
+ background-color: white;
+}
+nav ul{
+  display:flex;
+  gap: 5rem;
+
+}
+
+
+nav ul li{
+list-style: none;
+transition: all.3s;
+}
+
+nav ul li:hover{
+  font-size: 1.1rem;
+  letter-spacing: .1rem;
+  transition: all.3s;
+}
+nav ul li #home{
+  text-decoration: underline;
+
+  color: yellow;
+}
+nav ul li a{
+  text-decoration: none;
+  color:white;
+}
+
+nav img{
+  width: 8rem;
+  height: 2rem;
+}
+
+section{
+height: 70vh;
+  padding: 2rem 2%;
+
+}
+.home-page{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+background-size: cover;
+background: url(img/codeback1.png) ;
+background-color: rgba(28, 28, 12, 0.5);
+background-blend-mode: multiply;
+height: 100vh;
+background-size: contain;
+
+
+}
+
+.home-page img{
+  width: 27rem;
+  height: 8rem;
+}
+
+.home-page-welcome-text{
+  background-color:rgb(59, 31, 169) ;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+ 
+}
+
+.home-page-welcome-img{
+
+margin-bottom: .8rem;
+  align-self: flex-start;
+}
+
+.home-page-welcome-text h3{
+  /* background: linear-gradient(to right, green,rgb(144, 144, 61), blue  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; */
+  color: white;
+  font-size: 2.3rem;
+  width: 30rem;
+  align-self: center;
+  text-align: center;
+
+}
+.home-page-welcome-text h4{
+  font-size: 1.5rem;
+  text-align: center;
+  color:yellow;
+}
+
+
+.home-page  button{
+  margin-top: 1.3rem;
+  border: 0;
+}
+.home-page button a{
+  text-decoration: none;
+  margin-top: 1rem;
+  background-color:blue;
+  padding: .6rem .8rem;
+  font-size: .9rem;
+  border:0;
+  color: white;
+  font-weight: bold;
+  border-radius: .5rem;
+}
+
+.home-page button:active{
+background-color: slateblue;
+}
+
+
+
+@media (max-width: 800px) { 
+ 
+  nav ul{
+    gap: 2rem;
+  }
+}
+
+@media (max-width:635px){
+  #bars{
+    display: block;
+  }
+  #bars.act{
+    display: none;
+  }
+.home-page{
+  gap: 1rem;
+  justify-content: flex-start;
+  padding-top: 8rem;
+  padding: 8rem 1rem 0 1rem;
+}
+body{
+  height: 50vh;
+  overflow: hidden;
+}
+  nav img{
+    width: 6rem;
+    height: 1.5rem;
+  }
+  nav{
+    height:2rem ;
+}
+  nav ul{
+    display: none;
+    
+    flex-direction: column;
+    background-color:#333;
+    position: absolute;
+    top: 0rem;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+padding: .4rem 0rem;
+width: 14rem;
+height: 15rem;
+    gap: 0rem;
+  }
+  nav ul.active{
+    display: flex;
+  }
+  nav ul li {
+border-top: .5px solid #eee;
+border-bottom: .5px solid #eee;
+width: 100%;
+padding: 1rem 0;
+text-align: center;
+font-size: 1.2rem;
+
+  }
+ 
+
+  nav ul li #home{
+     color: yellow;
+     text-decoration: none;
+  }
+  nav ul .home{
+    border-top: 0;
+  
+  }
+  nav ul .home{
+    border-top: 0;
+  
+  }
+  nav ul .contact{
+    border-bottom: 0;  
+  }
+
+
+  .home-page img{
+    width: 15rem;
+    height: 4rem;
+  }
+
+  .home-page-welcome-text h3{
+    /* background: linear-gradient(to right, green,rgb(144, 144, 61), blue  );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
+    color: white;
+    font-size: 2rem;
+    width: 25rem;
+    align-self: center;
+    text-align: center;
+  
+  }
+  .home-page-welcome-text h4{
+    font-size: 1.2rem;
+    text-align: center;
+    color:yellow;
+  }
+
+}
+
+
+@media (max-width:470px) {
+
+.home-page-welcome-text{
+  padding: 1rem 0rem;
+}
+
+  nav ul{
+    width: 10rem;
+    height: 13rem;
+  }
+  nav ul li{
+    font-size: .8rem;
+  }
+
+
+  .home-page img{
+    width: 10rem;
+    height: 3rem;
+  }
+
+  .home-page-welcome-text {
+    padding: 0 3rem;
+  }
+  .home-page-welcome-text h3{
+    /* background: linear-gradient(to right, green,rgb(144, 144, 61), blue  );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
+    color: white;
+    font-size: 1.5rem;
+    width: 16rem;
+    align-self: center;
+    text-align: center;
+  
+  }
+  .home-page-welcome-text h4{
+    font-size: 1rem;
+    text-align: center;
+    color:yellow;
+  }
+}
