@@ -172,6 +172,7 @@ span{
 @media (max-width: 800px) { 
   body{
     height: 100vh;
+    overflow: hidden;
   }
   .project-demo #links{
     background-color: #eee;
