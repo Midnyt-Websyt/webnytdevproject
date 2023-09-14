@@ -74,7 +74,7 @@ align-items: center;
 justify-content: center;
 
 background-size: cover;
-background: url(img/codeback1.png) ;
+background: url(codeback1.png) ;
 background-color: rgba(28, 28, 12, 0.5);
 background-blend-mode: multiply;
 height: 100vh;
