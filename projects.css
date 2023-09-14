@@ -221,10 +221,6 @@ width: 30rem;
     display: none;
   }
 
-body{
-  height: 50vh;
-  overflow: hidden;
-}
   nav img{
     width: 6rem;
     height: 1.5rem;
